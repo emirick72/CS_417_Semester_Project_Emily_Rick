@@ -28,9 +28,9 @@ x_k <= x < x_{k+1}; y_i = c_0 + c_1x; *type*
 
 where…
 
-* $$x_k$$ and xk+1 are the domain in which yk is applicable
+* $$x_k$$ and $$x_k+1$$ are the domain in which $$y_k$$ is applicable
 
-* yk is the kth function
+* $$y_k$$ is the $$kth$$ function
 
 * *type* is either *least-squares* or *interpolation*
 ______
