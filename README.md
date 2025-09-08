@@ -23,13 +23,15 @@ ______
 
 All output must be written to text files (one file per core). Each line must take the form:
 
-$xk<=x<xk+1; yi=c0+c1x; *type* $
+```math
+xk<=x<xk+1; yi=c0+c1x; *type* 
+```
 
 where…
 
-* $xk$ and $xk+1$ are the domain in which $yk$ is applicable
+* xk and xk+1 are the domain in which yk is applicable
 
-* $yk$ is the $kth$ function
+* yk is the kth function
 
 * *type* is either *least-squares* or *interpolation*
 ______
