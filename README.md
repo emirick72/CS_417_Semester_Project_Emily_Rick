@@ -1,5 +1,9 @@
 # CS 417 Semester Project
 
+## Project Description Page
+The link to the Project Description page is [here](https://www.cs.odu.edu/~tkennedy/cs417/latest/Assts/project-cpu-temps/index.html).
+______
+
 ## Project Overview
 (The overview was given by Professor Kennedy)
 
