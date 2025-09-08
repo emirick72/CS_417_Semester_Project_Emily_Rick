@@ -23,12 +23,12 @@ ______
 
 All output must be written to text files (one file per core). Each line must take the form:
 
-x_k <= x < x_{k+1}; y_i = c_0 + c_1x; *type* 
+$$x_k <= x < x_\{k+1}$$ ; $$y_i = c_0 + c_1x$$ ; *type* 
 
 
 where…
 
-* $$x_k$$ and $$x_k+1$$ are the domain in which $$y_k$$ is applicable
+* $$x_k$$ and $$x_\{k+1}$$ are the domain in which $$y_k$$ is applicable
 
 * $$y_k$$ is the $$kth$$ function
 
