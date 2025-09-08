@@ -16,6 +16,8 @@ ______
 
 (All input was originally gathered by Professor Kennedy and put into .txt files.)
 
+Input libraries were given by Professor Kennedy.
+
 Input data is given via a txt file and is formatted as temperatures in degrees Celsius.
 All data points are whitespace delimited and each line represents temperature readings from 4 CPU cores (8 threads). Readings were taken every 30 seconds.
 
