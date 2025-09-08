@@ -23,7 +23,7 @@ ______
 
 All output must be written to text files (one file per core). Each line must take the form:
 
-$$x_k <= x < x_\{k+1}$$ ; $$y_i = c_0 + c_1x$$ ; *type* 
+$$x_k <= x < x_\{k+1}$$; $$y_i = c_0 + c_1x$$; *type* 
 
 
 where…
@@ -37,10 +37,9 @@ ______
 
 ## Project Requirements
 Your task is to take the temperature readings and generate for each core:
-
-A piecewise linear interpolation.
-A global linear least squares approximation.
-(Optional) A cubic spline (or other non-linear) interpolation.
+1. A piecewise linear interpolation.
+2. A global linear least squares approximation.
+3. (Optional) A cubic spline (or other non-linear) interpolation.
 
 Your program must accept an input filename as the first command line argument. Your program must NOT prompt the user for a filename.
 
@@ -52,4 +51,7 @@ Your solution must be organized into appropriate “modules” (using your selec
 ______
 
 ## Documentation Requirements
-All code must be properly and fully documented using a language appropriate comment style. All functions (including parameters and return types) must be documented.
+All code must be properly and fully documented using a language appropriate comment style. All functions (including parameters and return types) must be documented. 
+* Doxygen can be used for C++, Java, or JavaScript.
+* Javadoc can be used for Java.
+* Pydoc or Sphinx can be used for Python.
