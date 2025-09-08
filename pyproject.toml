@@ -1,6 +1,7 @@
 [build-system]
 # Below is copied from Prof. Kennedy's CS 330 examples
 # Python Shapes, example 7, pyproject.toml file
+# Link to the example file referenced: <https://github.com/cstkennedy/cs330-examples/blob/master/06-Python-Shapes/Example-7/pyproject.toml>
 
 [project]
 name = "CS_417_Semester_Project_CPU_Temps_Differences"
