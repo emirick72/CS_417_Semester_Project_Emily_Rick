@@ -4,11 +4,11 @@
 The link to the Project Description page is [here](https://www.cs.odu.edu/~tkennedy/cs417/latest/Assts/project-cpu-temps/index.html).
 ______
 ## Building the Project
-Enter this command in the terminal to build the project and get the output output files.
+Enter this command in the terminal to build the project and get the output files.
 ```
 python -m cs417temp cs417temp/Input_Text_Files/sensors-2018.12.26-no-labels.txt
 ```
-(Note: Replace the ending file '''sensors-2018.12.26-no-labels.txt''' with the corresponding file name to get the respective output files.)
+(Note: Replace the ending file ```sensors-2018.12.26-no-labels.txt``` with the corresponding file name to get the respective output files. There should be four output file for each core, so a total of 12 files should appear when all three input files are used in the command.)
 ______
 ## Project Overview
 (The overview was given by Professor Kennedy)
