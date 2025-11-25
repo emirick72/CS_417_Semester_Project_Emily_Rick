@@ -78,19 +78,13 @@ def least_squares_approx(times, temperatures):
     times = np.array(times)
     temperatures = np.array(temperatures)
 
-    # length of times array
     k = len(times)
-    # 1. calculate sum of all "times" values. Outputs 300
     times_sum = sum(times)
-    # 2. calculate sum of all "temperatures" values. Outputs 354.0
     temperatures_sum = sum(temperatures)
-    # 3. Square each "times" element, then sum it all together
-    squared_times_sum_1 = np.sum(times**2)
 
-    # 4. sum of (times x temperatures). Multiply then sum
+    squared_times_sum_1 = np.sum(times**2)
     multiply_arrays = times * temperatures
     summed_multiplied_arrays = sum(multiply_arrays)
-    # 5. add all times together THEN square that sum
     squared_times_sum_2 = np.sum(times)**2
 
     # CALCULATE C1 (FIRST)
@@ -115,10 +109,6 @@ all_files = [
 # loop through all 3 files (12 cores total)
 # and apply the least_squares function to all of them
 for basename, cores, times in all_files:
-    #print("Processing:", basename)
-
     for core_index in range(4):
         temps = cores[core_index]
         c0, c1 = least_squares_approx(times, temps)
-
-        #print(f" Core {core_index}: c0={c0:.4f}, c1={c1:.6f}")
