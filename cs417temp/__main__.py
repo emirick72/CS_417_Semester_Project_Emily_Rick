@@ -2,6 +2,7 @@ import sys
 from pathlib import Path
 from cs417temp.parse_temps import parse_raw_temps
 from cs417temp.piecewise_linear_interpolation import piecewise_linear_interpolation
+from cs417temp.global_linear_least_squares_approx import least_squares_approx
 
 with Path(sys.argv[1]).open() as o:
     print(list(parse_raw_temps(o)))
@@ -9,7 +10,8 @@ with Path(sys.argv[1]).open() as o:
 def output_interpolation_file (core_index, x_values, y_values, basename):
     """
     Output a text file using the the piecewise_linear_interpolation function
-    (defined in it's respective module)
+    and the linear least squares approximation function
+    (defined in their respective modules)
 
     Args:
         core_index: counts the number of CPU cores (0 through 3)
@@ -21,7 +23,7 @@ def output_interpolation_file (core_index, x_values, y_values, basename):
         basename: variable to hold the input file name without the extension (.dat or .txt extensions)
 
     Yields:
-        Outputs each line for each interpolation in the following format:
+        Outputs each line for each interpolation and least-squares approx. in the following format:
         x_k <= x < x_(k+1) ; y_i = c_0 + c_1x ; type
     """
     plot_points = piecewise_linear_interpolation(x_values, y_values)
@@ -32,6 +34,12 @@ def output_interpolation_file (core_index, x_values, y_values, basename):
     with open(file_output, "w") as f:
         for (x_start, x_end, b, m) in plot_points:
             f.write(f"{x_start:10.0f} <= x <= {x_end:10.0f} ; y = {b:10.4f} + {m:10.4f} x ; interpolation\n")
+        # output each line for each least squares approximation
+        c0, c1 = least_squares_approx(x_values, y_values)
+        f.write(f"{x_values[0]:10.0f} <= x <= {x_values[-1]:10.0f} ; y = {c0} + {c1} x ; least-squares\n")
+
+
+
 
 """
 Main driver function

@@ -67,3 +67,7 @@ All code must be properly and fully documented using a language appropriate comm
 * Doxygen can be used for C++, Java, or JavaScript.
 * Javadoc can be used for Java.
 * Pydoc or Sphinx can be used for Python.
+______
+
+## Updates
+11/24/2025: Implemented the global linear least squares approximation module for this project. Also updated the README file and the main file.
